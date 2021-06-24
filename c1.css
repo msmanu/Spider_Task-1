@@ -1,0 +1,234 @@
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #E8F0F2;
+}
+
+.tim {
+  color: #99154E;
+  position: absolute;
+  right: 120px;
+  top: 70px;
+}
+
+#clock {
+  padding-top: 30px;
+  position: absolute;
+  right: 70px;
+  top: 100px;
+  color: #114E60;
+  font-size: 30px;
+}
+
+#whole {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #053742;
+  box-sizing: border-box;
+  z-index: 20;
+  position: relative;
+  left: 350px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 1rem 0 3rem;
+  font-family: 'Hind', sans-serif;
+}
+
+.title {
+  color: #DA0037;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  width: 350px;
+  margin: 0.25rem;
+  transition: .5s;
+  font-size: 1.15rem;
+}
+
+#ex {
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  width: 50px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: .5s;
+  margin: 0.25rem;
+  position: relative;
+  bottom: 110px;
+  left: 450px;
+}
+
+.add {
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  width: 50px;
+  background-color: #DA0037;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: .5s;
+  margin: 0.25rem;
+}
+
+.add:hover, #ex:hover, .edit:hover, .remove:hover {
+  opacity: 0.7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.item {
+  padding: 0.5rem;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 1.4rem;
+}
+
+.item_input {
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  width: 245px;
+}
+
+.edit {
+  background: none;
+  outline: none;
+  border: none;
+  color: #DA0037;
+  background-color: #F2F4C3;
+  font-size: 0.9rem;
+  font-family: 'Hind', sans-serif;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.remove {
+  background: none;
+  outline: none;
+  border: none;
+  color: #DA0037;
+  background-color: #F2F4C3;
+  font-size: 0.9rem;
+  font-family: 'Hind', sans-serif;
+  cursor: pointer;
+}
+
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#header {
+  padding: 10px;
+  color: #99154E;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header button {
+  background-color: #114E60;
+}
+
+#container {
+  width: 770px;
+}
+
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #480032;
+}
+
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day+#currentDay {
+  background-color: #e8f4fa;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #9DBEB9;
+}
