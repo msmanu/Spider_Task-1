@@ -1,5 +1,3 @@
-// **************************************************************************
-
 function clock() {
   let date = new Date();
   let hrs = date.getHours();
